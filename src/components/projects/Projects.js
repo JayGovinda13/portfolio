@@ -1,4 +1,3 @@
-// src/components/Projects.js
 import React from 'react';
 import styled from 'styled-components';
 import { Box, Heading, HStack, VStack, Image, Text, Link } from '@chakra-ui/react';
@@ -23,7 +22,7 @@ const ProjectCard = styled(Box)`
   padding: 4;
   border-radius: 8px;
   transition: transform 0.3s ease-in-out;
-  height: 400px; /* Defina uma altura fixa para ambos os cartões */
+  width: 100%; /* Largura total do contêiner */
 
   &:hover {
     transform: scale(1.05);
@@ -31,9 +30,9 @@ const ProjectCard = styled(Box)`
 `;
 
 const ProjectImage = styled(Image)`
-  width: 100%; /* Garante que a imagem ocupe 100% da largura do contêiner */
-  height: 200px; /* Altura fixa para todas as imagens */
-  object-fit: cover; /* Mantém a proporção da imagem e corta se necessário */
+  width: 100%;
+  height: auto; /* Ajusta automaticamente a altura em proporção à largura */
+  object-fit: cover;
   border-radius: 8px;
 `;
 
@@ -51,7 +50,7 @@ const Projects = () => {
               RPG - Dragon Repeller
             </Heading>
             <Text>
-              Prepare-se para uma aventura épica no reino mágico de Eldoria, onde dragões ameaçam a paz e a segurança das terras. Em "Dragon Repeller", você assume o papel de um corajoso aventureiro encarregado de proteger o reino dos perigosos dragões que assolam a região.
+              {/* Conteúdo do projeto */}
             </Text>
             <Link href="https://rpg-deployi.vercel.app" color={palette.accent} textDecoration="underline">
               Ver mais
@@ -66,7 +65,7 @@ const Projects = () => {
               Acervo de livros
             </Heading>
             <Text>
-              Bem-vindo à Biblioteca Online, sua plataforma centralizada para explorar e gerenciar sua coleção de livros. Organize seus títulos favoritos, descubra novas obras, e acompanhe suas leituras de maneira eficiente. Nossa aplicação de acervo de livros oferece recursos intuitivos, permitindo que você adicione, categorize e avalie cada livro. Explore categorias diversas, desde ficção até não-ficção, e compartilhe recomendações com outros amantes da leitura. A Biblioteca Online é sua ferramenta definitiva para criar, expandir e desfrutar do seu acervo literário de maneira simples e personalizada.
+              {/* Conteúdo do projeto */}
             </Text>
             <Link href="https://labecommerce-cx15.vercel.app" color={palette.accent} textDecoration="underline">
               Ver mais
