@@ -45,13 +45,12 @@ const Projects = () => {
       <HStack spacing={8} justify="center">
         <ProjectCard>
           <VStack spacing={2}>
-            <ProjectImage src="/img/dragon.png" alt="Projeto 1" />
+            <Link href="https://rpg-deployi.vercel.app">
+              <ProjectImage src="/img/dragon.png" alt="Projeto 1" />
+            </Link>
             <Heading as="h3" size="md">
               RPG - Dragon Repeller
             </Heading>
-            <Text>
-              {/* Conteúdo do projeto */}
-            </Text>
             <Link href="https://rpg-deployi.vercel.app" color={palette.accent} textDecoration="underline">
               Ver mais
             </Link>
@@ -60,13 +59,12 @@ const Projects = () => {
 
         <ProjectCard>
           <VStack spacing={2}>
-            <ProjectImage src="/img/acervo.png" alt="Projeto 2" />
+            <Link href="https://labecommerce-cx15.vercel.app">
+              <ProjectImage src="/img/acervo.png" alt="Projeto 2" />
+            </Link>
             <Heading as="h3" size="md">
               Acervo de livros
             </Heading>
-            <Text>
-              {/* Conteúdo do projeto */}
-            </Text>
             <Link href="https://labecommerce-cx15.vercel.app" color={palette.accent} textDecoration="underline">
               Ver mais
             </Link>
