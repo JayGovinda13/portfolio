@@ -24,7 +24,7 @@ function App() {
             <AboutMe />
             <Projects />
             <Contact />
-            {/* <Footer /> */}
+            <Footer />
           </CacheProvider>
         </StyledThemeProvider>
       </ThemeProvider>
