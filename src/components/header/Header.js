@@ -63,6 +63,9 @@ const Header = () => {
             <StyledLink href="#about">Sobre Mim</StyledLink>
           </ListItem>
           <ListItem>
+            <StyledLink href="#blog">Blog</StyledLink>
+          </ListItem>
+          <ListItem>
             <StyledLink href="#projects">Projetos</StyledLink>
           </ListItem>
           <ListItem>

@@ -10,6 +10,7 @@ import AboutMe from './components/about/About';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import Blog from './components/blog/Blog';
 
 const cache = createCache({ key: 'css', prepend: true });
 
@@ -22,6 +23,7 @@ function App() {
           <CacheProvider value={cache}>
             <Header />
             <AboutMe />
+            <Blog />
             <Projects />
             <Contact />
             <Footer />

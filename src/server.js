@@ -1,44 +1,66 @@
-// server.js
 const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 const cors = require('cors');
-const nodemailer = require('nodemailer');
+const router = express.Router();
+const Post = require('../models/Post')
 
 const app = express();
-exports.app = app;
-const port = 3001;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
+app.use(bodyParser.json());
 
-app.use(express.json({ limit: '32kb' }));
-app.use(bodyParser.urlencoded({ extended: true, limit: '5mb' }));
+mongoose.connect('mongodb://localhost/meu_blog', { useNewUrlParser: true, useUnifiedTopology: true });
 
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'jaygovinda13@gmail.com',
-    pass: 'c4p1t404m3r1c4',
+const postsRoute = require('./routes/posts');
+app.use('/posts', postsRoute);
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
+const postSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: true,
+  },
+  content: {
+    type: String,
+    required: true,
+  },
+  author: {
+    type: String,
+    required: true,
   },
 });
 
-app.post('/send-email', (req, res) => {
-  const { name, email, message } = req.body;
+module.exports = mongoose.model('Post', postSchema);
 
-  const mailOptions = {
-    from: 'jaygovinda13@gmail.com',
-    to: 'juliano.amaral@icloud.com',
-    subject: 'Contato Profissional',
-    text: `Nome: ${name}\nE-mail: ${email}\nMensagem: ${message}`,
-  };
+// Rota para obter todas as postagens
+router.get('/', async (req, res) => {
+  try {
+    const posts = await Post.find();
+    res.json(posts);
+  } catch (error) {
+    res.json({ message: error.message });
+  }
+});
 
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      return res.status(500).json({ message: 'Erro ao enviar e-mail', error });
-    }
-
-    res.status(200).json({ message: 'E-mail enviado com sucesso!', info });
+// Rota para criar uma nova postagem
+router.post('/', async (req, res) => {
+  const post = new Post({
+    title: req.body.title,
+    content: req.body.content,
+    author: req.body.author,
   });
+
+  try {
+    const savedPost = await post.save();
+    res.json(savedPost);
+  } catch (error) {
+    res.json({ message: error.message });
+  }
 });
 
-app.listen(port, () => {
-  console.log(`Servidor Node.js rodando em http://localhost:${port}`);
-});
+module.exports = router;
