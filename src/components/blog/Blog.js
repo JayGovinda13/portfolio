@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { VStack, Heading, Box, Text } from '@chakra-ui/react';
+import React, { useState, useEffect, } from 'react';
+import { VStack, Heading, Box, Text, Link } from '@chakra-ui/react';
 import axios from 'axios';
 import styled from 'styled-components';
 
@@ -61,6 +61,9 @@ Quanto ao resultado final, fiquei extremamente satisfeito. O componente não ape
 A implementação deste componente foi um marco na minha evolução como desenvolvedor front-end. Foi gratificante ver como cada pequena otimização contribuía para um produto final mais robusto e acessível. Estou animado para continuar explorando novas técnicas e ferramentas que possam melhorar ainda mais a minha capacidade de criar soluções web eficazes e envolventes.
 
 Se você também está interessado em desenvolvimento web e busca constantemente maneiras de aprimorar suas habilidades, sinta-se à vontade para seguir meu blog e compartilhar suas próprias experiências de codificação. Juntos, podemos continuar a construir uma comunidade de desenvolvedores dedicados e inspirados.</Text>
+                </Box>
+                <Box>
+                    <Link href='http://globo.com'>Globo</Link>
                 </Box>
             </VStack>
         </StyledBlog>
