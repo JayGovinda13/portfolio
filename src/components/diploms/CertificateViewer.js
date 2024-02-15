@@ -45,6 +45,7 @@ const certificates = [
 
 const pdfCertificates = {
   '/pdf/Certificado_ICL.pdf': 'ICL Membro Solidário',
+  '/pdf/MedicinaIntegrativa.pdf': 'Medicina Integrativa e Autocuidado'
 };
 
 

@@ -44,23 +44,23 @@ const Blog = () => {
                 ))}
                 <Box p={4} borderWidth="1px" borderRadius="md" borderColor={palette.accent}>
                     <Heading as="h3" size="lg" mb={2}>
-                        A Aventura da Transição de Carreira 
+                    Otimizando a Experiência do Usuário com o Novo Componente de Visualização de Certificados
                     </Heading>
-                    <Text>Em um momento marcado por desafios, minha transição de carreira teve início em uma encruzilhada dolorosa, quando o fim de um relacionamento coincidiu com o término inesperado de minha carreira como professor de história. A sala de aula, que antes era meu palco para compartilhar conhecimento e inspirar mentes, de repente, tornou-se uma memória distante, deixando-me à deriva em um mar de incertezas.
+                    <Text>Em minha jornada constante de aprendizado e desenvolvimento, sempre procuro maneiras de melhorar a experiência do usuário e a eficiência do meu trabalho. Recentemente, tive a oportunidade de implementar um novo componente no meu blog pessoal, o "CertificateViewer", que exibe uma coleção de certificados digitais e documentos PDF relevantes.
 
-A demissão trouxe consigo não apenas a perda profissional, mas também a necessidade premente de encontrar uma nova direção, uma nova esperança, já que muitas vezes me encontrei em contradições do que idealizer sobre dar aula e a realidade. Foi nesse período turbulento que iniciei minha jornada de transição, enfrentando o desafio monumental da reinvenção pessoal e profissional.
+Este componente foi construído usando React, uma das tecnologias web mais populares para a criação de interfaces de usuário interativas. Para estilizar os componentes, optei por usar a biblioteca styled-components, que permite escrever CSS real diretamente no JavaScript, proporcionando maior controle e reutilização de estilos.
 
-No meio desse vendaval de mudanças, encontrei conforto e inspiração em duas forças poderosas: a música junto a minha banda e a espiritualidade, especificamente minha conexão com a filosofia Hare Krsna. Compor e tocar com meus companheiros tornou-se um bálsamo para minha alma ferida, proporcionando alívio em meio ao caos. Cada nota e cada letra eram como faróis, guiando-me através das trevas da incerteza.
+Além disso, integrei o Chakra UI, uma biblioteca de componentes acessíveis e modulares que segue as melhores práticas de design do sistema. Utilizei seus componentes básicos, como Box, Heading e Image, para criar uma interface limpa e responsiva.
 
-Minha fé na espiritualidade Hare Krsna desempenhou um papel crucial durante essa transição. Encontrar um propósito mais profundo e uma perspectiva espiritual ajudou-me a manter a compostura diante das adversidades. A prática da meditação e a imersão nos ensinamentos fortaleceram minha mente, oferecendo uma base sólida para enfrentar os desafios à frente.
+Uma parte significativa da implementação foi a criação de uma paleta de cores personalizada, que foi aplicada consistentemente em todo o componente. Isso não só melhora a aparência geral, mas também contribui para uma experiência visual coesa e profissional.
 
-A aprendizagem tornou-se um pilar fundamental nesse processo de transição. Investir tempo e esforço na aquisição de novas habilidades e conhecimentos abriu portas que antes pareciam seladas. Cada desafio de aprendizagem era uma oportunidade de crescimento, uma chance de me reinventar e progredir.
+Ao longo do processo, percebi a importância de otimizar o código para garantir que ele seja eficiente e fácil de manter. Assim, decidi remover props não utilizadas, usar URLs únicas como chaves para itens mapeados e adicionar atributos aria-label para melhorar a acessibilidade. Essas pequenas mudanças tinham um grande impacto na qualidade do código e na experiência do usuário.
 
-A verdadeira transformação, no entanto, começou quando adotei uma atitude mental positiva diante dos problemas. Em vez de me deixar afundar nas adversidades, optei por vê-las como trampolins para o sucesso. A mentalidade positiva não apenas me ajudou a superar as dificuldades, mas também a enxergar oportunidades onde outros viam obstáculos.
+Quanto ao resultado final, fiquei extremamente satisfeito. O componente não apenas cumpre sua função de apresentar os certificados de forma organizada, mas também oferece uma experiência visual agradável e funcional. A transição suave ao passar o mouse sobre os cartões de certificado adiciona um toque de sofisticação, enquanto a clareza e a simplicidade do design mantêm o foco no conteúdo.
 
-Hoje, olhando para trás, percebo que cada desafio que enfrento durante minha transição de carreira é uma peça fundamental na construção do meu novo caminho. A música e a espiritualidade são não apenas bengalas emocionais, mas alicerces que sustentaram minha jornada. A lição mais valiosa aprendida foi que, independentemente das circunstâncias, a atitude mental positiva é o farol que ilumina o caminho, transformando crises em oportunidades e derrotas em triunfos.
+A implementação deste componente foi um marco na minha evolução como desenvolvedor front-end. Foi gratificante ver como cada pequena otimização contribuía para um produto final mais robusto e acessível. Estou animado para continuar explorando novas técnicas e ferramentas que possam melhorar ainda mais a minha capacidade de criar soluções web eficazes e envolventes.
 
-Minha transição de carreira não é apenas uma mudança profissional, mas uma jornada de autodescoberta e crescimento pessoal. Ao abraçar a positividade, a aprendizagem constante e a força da espiritualidade, provei para mim mesmo que, mesmo nas situações mais sombrias, podemos encontrar a luz que nos guiará para um futuro mais promissor.</Text>
+Se você também está interessado em desenvolvimento web e busca constantemente maneiras de aprimorar suas habilidades, sinta-se à vontade para seguir meu blog e compartilhar suas próprias experiências de codificação. Juntos, podemos continuar a construir uma comunidade de desenvolvedores dedicados e inspirados.</Text>
                 </Box>
             </VStack>
         </StyledBlog>
