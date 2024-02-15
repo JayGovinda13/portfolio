@@ -62,7 +62,7 @@ const Header = () => {
             <StyledLink href="#about">Sobre Mim</StyledLink>
           </ListItem>
           <ListItem>
-            <StyledLink href='#certificados'>Certicados</StyledLink>
+            <StyledLink href='#certificados'>Certificados</StyledLink>
           </ListItem>
           <ListItem>
             <StyledLink href="#projects">Projetos</StyledLink>
