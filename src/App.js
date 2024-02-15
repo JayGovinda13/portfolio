@@ -11,6 +11,8 @@ import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Blog from './components/blog/Blog';
+import CertificateViewer from './components/diploms/CertificateViewer';
+
 
 const cache = createCache({ key: 'css', prepend: true });
 
@@ -23,8 +25,9 @@ function App() {
           <CacheProvider value={cache}>
             <Header />
             <AboutMe />
-            <Blog />
+            <CertificateViewer />
             <Projects />
+            <Blog />
             <Contact />
             <Footer />
           </CacheProvider>

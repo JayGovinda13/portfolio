@@ -1,4 +1,3 @@
-// src/components/Header.js
 import React from 'react';
 import styled from 'styled-components';
 import { Box, Flex, Heading, Link as ChakraLink, Spacer, UnorderedList, ListItem } from '@chakra-ui/react';
@@ -63,10 +62,13 @@ const Header = () => {
             <StyledLink href="#about">Sobre Mim</StyledLink>
           </ListItem>
           <ListItem>
-            <StyledLink href="#blog">Blog</StyledLink>
+            <StyledLink href='#certificados'>Certicados</StyledLink>
           </ListItem>
           <ListItem>
             <StyledLink href="#projects">Projetos</StyledLink>
+          </ListItem>
+          <ListItem>
+            <StyledLink href="#blog">Blog</StyledLink>
           </ListItem>
           <ListItem>
             <StyledLink href="#contact">Contato</StyledLink>
